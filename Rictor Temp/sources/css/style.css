@@ -1,0 +1,658 @@
+/* General setup */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: #454545;
+    
+}
+
+.text-center {
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.line {
+    padding: 1px 5px;
+    color: #333;
+    width: 10%;
+}
+/******************/
+/* Header slider */
+/******************/
+
+header {overflow: hidden;}
+
+.header-slider {
+    position: relative;
+    display: flex;
+    width: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+   
+}
+
+
+
+.slide1,
+.slide2,
+.slide3{
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding-right: 100%;
+    
+}
+
+.slide1 { background-image: linear-gradient(rgba(0, 0, 0, 0.42),rgba(0, 0, 0, 0.42)),  url(/sources/img/img-3.jpg)}
+.slide2 { background-image: linear-gradient(rgba(0, 0, 0, 0.42),rgba(0, 0, 0, 0.42)),  url(/sources/img/img-2.jpg)}
+.slide3 { background-image: linear-gradient(rgba(0, 0, 0, 0.42),rgba(0, 0, 0, 0.42)),  url(/sources/img/img-1.jpg)}
+
+.h1 {
+    font-size: 3.5em;
+}
+.head-text {
+    position: absolute;
+    color: white;
+    width: 100%;
+    white-space: pre-wrap;
+    top: 20%;
+    padding: 0 15%;
+}
+.scroll-dots {
+    display: flex;
+    top:95%;
+    left: 47%;
+    position: absolute;
+}
+
+.dot1,
+.dot2,
+.dot3{
+    width: 1%;
+    padding: 8px;
+    border-radius: 90%;
+    background-color: rgba(165, 165, 165, 0.54);
+    margin: 3%;
+    
+}
+
+.Toggle-list { display: none;}
+
+/******************/
+/* fixed header  */
+/******************/
+
+.top-bar {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    padding-top: 3%;
+    margin-bottom: -2%;
+    top: 0;
+    left: 0;
+    color:aqua;
+    z-index: 100;
+}
+
+.top-bar nav { margin-left: -60%;}
+
+.top-bar nav a:link,
+.top-bar nav a:visited {
+    margin: 0 2%;
+    font-weight: 400;
+    font-size: 90%;
+    text-transform: uppercase;
+    color: #b9b9b9;
+    transition: color 0.2s;
+        
+}
+
+.top-bar nav a:active,
+.top-bar nav a:hover {
+    color: #fff;
+}
+.nav-toggle {
+    display: none;
+}
+
+.web-logo {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -0.7%;
+    margin-left: 10%;
+}
+
+.sticky {
+    position: fixed;
+    background-color: #222328;
+    padding-bottom: 1%;
+    padding-top:1%;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.85);
+}
+
+.header-btn a {
+    position: absolute;
+    top: 60%;
+    left: 43%;
+    padding: 13px 35px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.5s;
+}
+
+.header-btn a:active,
+.header-btn a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/******************/
+/* About us sec.  */
+/******************/
+.about-us,
+.services,
+.project,
+.pricing,
+.team,
+.blog{
+    padding-top: 5%;
+}
+.about-us p,
+.services p,
+.project p,
+.pricing p,
+.team p,
+.blog p{
+      color: rgba(119, 115, 115, 0.88);
+     font-size: 90%;
+}
+
+.about-part {
+    display: flex;
+   justify-content: space-around;
+    padding: 5%; 
+    text-align: left;
+}
+.about-part div {
+    padding: 0 20px;
+}
+
+
+.about-desc {
+    line-height: 2em;
+    padding-top: 4%;
+}
+
+/******************/
+/* About us sec.  */
+/******************/
+
+.Tablet-cover img{
+   width: 100%;
+  }  
+/******************/
+/* web stats sec.  */
+/******************/
+
+.web-stats {
+    margin-top: -0.4%;
+    display: flex;
+    background-color: #1f2124;
+    justify-content: space-around;
+    padding: 5% 0;
+    color: #fff;
+    font-size: 110%;
+}
+
+.web-stats div {
+    text-align: center;
+    width: 25%;
+    border-right: 1px solid #fff;
+}
+
+/******************/
+/* services sec.  */
+/******************/
+
+.services-part {
+    display: flex;
+    width: 100%;
+    padding: 2% 5%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.services-part div {
+    width: 33%;
+    padding: 3%;
+}
+
+.services-part h2 {
+    padding: 5% 0;
+    font-size: 100%;
+}
+
+.services-part p {
+    line-height: 2em;
+    color: rgba(59, 59, 59, 0.72);
+    font-size: 80%;
+}
+
+.services-part i {
+    font-size: 250%;
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgba(95, 95, 95, 0.82);
+    color: rgba(95, 95, 95, 0.82);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 4%;
+}
+
+/******************/
+/*We design for you*/
+/******************/
+
+.design {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)),url(/sources/img/img-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 80vh;
+    text-transform:capitalize;
+    width: 100%;
+    text-align: center;
+    font-size: 380%;
+    color: #fff;
+}
+
+.design p {
+    padding-top: 16%;
+    letter-spacing: 0.3em;
+}
+
+.design i {
+    font-size: 80%;
+    color: #fff;
+}
+
+/******************/
+/*We design for you*/
+/******************/
+
+
+.project-sec {
+        background-color: #eaeaea;
+
+}
+.project-part {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10%;
+    font-size: 80%;
+}
+
+.project-div {
+    width: 30%;
+    height: 30%;
+    background-color: #fff;
+    padding: 1%;
+    margin: 1%;
+}
+
+
+.project-img img {
+    width:  100%;
+    height: auto;
+}
+
+
+
+.floatup {margin-top: -23%;}
+.floatleft {margin-left: 65%;}
+ 
+.overlay {
+     width: 100%;
+    height: auto;
+    background-color: #555;
+}
+
+/******************/
+/*We design for you*/
+/******************/
+
+.text-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.64);
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+.text-flex {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    
+}
+
+.text-slide {
+   width: 100%;
+    color: #fff;
+}
+
+
+.text-slide p {
+    white-space: pre-wrap;
+    width: 1350px;
+    padding: 5% 20%;
+    font-size: 120%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.text-slide span {
+    font-size: 400%;
+}
+
+.text-slide img {
+    display: block;
+    margin-left: 46.5%;
+    margin-top: -2%;
+    width: 5%;
+    border-radius: 50%;
+}
+
+.text-dots {
+    display: flex;
+    justify-content: center;
+   
+}
+.text-dot {
+    background-color: rgba(255, 255, 255, 0.28);
+    padding: 6px;
+    margin-right: 20px;
+    margin-top: 3%;
+    border-radius: 50%;
+     cursor: pointer;
+}
+
+/******************/
+/*We design for you*/
+/******************/
+
+.price-plan {
+    display: flex;
+    padding: 5%;
+    width: 100%;
+    justify-content: center;
+}
+
+.plan {
+    margin: 1%;
+    background-color: #f2f0f1;
+    width: 22%;
+    height: 520px;
+
+}
+.pack{
+    background-color: #000312; 
+    color: #fff;
+    height: 150px;
+    font-size: 170%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    padding-top: 18%;
+}
+.deluxe {background-color: #01c7a4;}
+.price {
+    font-size: 150%;
+    font-weight:700; 
+    text-align: center;
+    margin-top: -50px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 32%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.price span {
+    font-size: 55%;
+    font-weight: 500;  
+}
+
+.prop {
+    border-radius: 10px;
+    width: 100%;
+    font-size: 100%;
+    text-align: center;
+    line-height: 3em;
+    border-radius: 0 0 10px 10px;
+    color: rgba(38, 38, 38, 0.73);
+    padding-bottom: 10%;
+}
+
+.plan a:link,
+.plan a:visited {
+    padding: 4% 15%;
+    text-align: center;
+    background-color:  #01c7a4;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 90%;
+   margin-left: 25%;
+    transition: background-color 0.2s;
+}
+
+.plan a:active,
+.plan a:hover {
+        background-color:  #02987d;
+}
+
+
+/******************/
+/*We design for you*/
+/******************/
+.team-section {background-color: #eaeaea;}
+
+.team-info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+}
+
+.team-info img {
+    width: 50%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+.team-info p {
+    font-size: 80%;
+    padding-top: 1%;
+}
+
+/******************/
+/*We design for you*/
+/******************/
+
+.purchasing {
+    background-color: #01c7a4;
+    color: #fff;
+    font-size: 180%;
+    height: 200px;
+    padding: 6% 10%;
+}
+
+.purchasing a {
+    color: #444;
+    padding: 1% 2%;
+    font-size: 50%;
+    background-color: #fff;
+    border-radius: 5px;
+    float: right;
+    margin-top: -3%;
+    transition: 0.2s
+}
+.purchasing a:active,
+.purchasing a:hover {
+    background-color: rgba(28, 28, 28, 0.87);
+     color: rgba(255, 255, 255, 0.88);
+
+}
+
+/******************/
+/*We design for you*/
+/******************/
+
+
+.blog-sec {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 5%;
+    font-size: 90%;
+    line-height: 2em;
+    color: rgba(64, 64, 64, 0.71);
+}
+
+.blog-sec span {
+font-size: 120%;  
+color: #080808;
+}
+
+.blog-hd {
+font-size: 150%;
+color: #000000;
+padding-bottom: 2%;
+}
+
+.blog-sec img {
+    width: 100%;
+}
+
+.blog-div {
+    padding: 1%;
+}
+
+.blog-div a {
+    background-color: #01c7a4;
+    padding: 2% 4%;
+    border-radius: 5px;
+    font-size: 80%;
+    transition: 0.2s
+}
+
+.blog-div a:hover {
+        background-color: #02987d;
+
+}
+
+/******************/
+/*We design for you*/
+/******************/
+
+
+.signup {
+    background-color: #eaeaea;
+    height: 650px;
+}
+
+.signup-form {
+    padding: 5%;
+    font-size: 100%;
+    font-weight: 700;
+}
+
+.flex-form {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+.flex-form input {
+    width: 350px;
+    height: 40px;
+    border: none;
+    margin-top: 1%;
+    padding-left: 3%;
+} 
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border: none;
+    padding-left: 1%;
+    font-size: 100%;
+
+}
+
+.signup a {
+    background-color: #01c7a4;
+    padding: 10px 25px;
+    font-size: 95%;
+    border-radius: 5px;
+    margin-left: 84%;
+    transition: 0.2s;
+}
+
+.signup a:hover {
+            background-color: #02987d;
+}
+
+*:focus{outline: none;}
+::placeholder {
+    font-size: 100%;
+    color: rgba(75, 75, 75, 0.76);
+}
+
+/******************/
+/*We design for you*/
+/******************/
+
+footer {
+    background-color: #222328;
+    color: rgba(203, 203, 203, 0.76);
+    height: 100px;
+}
+
+footer p {
+    padding: 3% 8%;
+    font-size: 120%;
+}
+
+.footer-icon {
+    display: flex;
+    width: 20%;
+    padding-right: 10%;
+    padding-top: 3%;
+    font-size: 150%;
+    float: right;
+    
+}
+.footer-icon a { padding-right: 30%;}

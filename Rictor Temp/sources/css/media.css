@@ -1,0 +1,66 @@
+@media only screen and (max-width: 767px) {
+    
+/*********************/    
+/******** Header ******/
+/*********************/    
+    .web-logo { font-size: 200%; margin-top: 1.5%; }
+    .top-bar nav {display: none; }
+    .nav-toggle { display: block; cursor: pointer;}
+    .nav-toggle img {width: 60px; margin-right: 20px;}
+    .Toggle-list { display: none; position: absolute; width: 100%; border-top: 1px solid rgba(109, 109, 109, 0.37); top:100%; background-color: #222328; font-size: 90%; line-height: 3em; text-transform: uppercase;}
+    .Toggle-list a { display: block; width: 100%; margin-left: 2%; color: rgba(206, 206, 206, 0.83); transition: 0.2s}
+    .Toggle-list a:hover {color: #fff;}
+    .home a { border-bottom: 3px solid #01c7a4; color: #01c7a4;}
+    .head-text { width: 100%; font-size: 60%; padding: 0 5%;}
+    .head-text p { font-size: 140%; }
+    .header-btn a { left: 34%;}
+    
+/******** About ******/
+    .text-center {padding: 10% 5%;}
+    .about-part { flex-direction: column;}
+    .about-part div { padding: 5% 0;}
+    
+/******** Web stats ******/
+    .web-stats { flex-direction: column; text-align: center;}
+    .web-stats div {width: 100%; font-size: 120%; padding-bottom: 15%;}
+    
+/******** Services ******/
+    .services-part { flex-direction: column;}
+    .services-part div { width: 100%; text-align: center; padding: 10% 0;}
+    
+/******** Project section ******/
+    .project-part { flex-direction: column;}
+    .project-div {width: 100%; margin-bottom: 5%;}
+    .floatup {margin-top: 0;}
+    .floatleft {margin-left: 0;}
+    .text-slide p {width: 483px; font-size: 90%; padding: 7% 5%;}
+
+    .price-plan {flex-direction: column;}
+    .plan {width: 100%; margin: 5% 0; height: 550px;}
+    .price {margin-left: 38%;}
+    .pack {padding-top: 8%;}
+
+/******** Purchasing section ******/
+    .purchasing a { float: none;}
+
+/******** Team section ******/
+    .team-info {flex-direction: column;}
+    .team-info div {margin-top: 5%;}
+    .team-info p {padding-top: 0;}
+
+/******** Blog section ******/
+    .blog-sec {flex-direction: column;}
+    .blog-div {padding-bottom: 15%;}
+
+/******** signup form ******/
+    .signup {height: 800px;}
+    .flex-form {flex-direction: column;}
+    .flex-form p {padding-top: 3%;}
+    .signup a {margin-left: 35%;}
+
+/******** footer ******/
+    footer {height: 50px;}
+    footer p {font-size: 80%; padding: 5% 1;}
+    .footer-icon {margin-right: 10%;padding-top: 3%;font-size: 100%;}
+}
+
